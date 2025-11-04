@@ -48,3 +48,4 @@ C:\Users\jwilliams\RiderProjects\RulesEnginePOC\RulesEnginePOC\bin\Debug\net9.0\
 C:\Users\jwilliams\RiderProjects\RulesEnginePOC\RulesEnginePOC\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\jwilliams\RiderProjects\RulesEnginePOC\RulesEnginePOC\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\Users\jwilliams\RiderProjects\RulesEnginePOC\RulesEnginePOC\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jwilliams\RiderProjects\RulesEnginePOC\RulesEnginePOC\obj\Debug\net9.0\RulesEnginePOC.sourcelink.json

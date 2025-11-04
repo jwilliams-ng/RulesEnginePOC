@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<IRuleEngineService, RuleEngineService>();
+builder.Services.AddScoped<IProviderRefundRulesService, ProviderRefundRulesService>();
 builder.Services.AddDbContext<RuleEngineContext>(opt => opt.UseInMemoryDatabase("RulesEngineDB")); 
 builder.Services.AddSwaggerGen();
 

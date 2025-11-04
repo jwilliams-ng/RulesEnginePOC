@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RulesEnginePOC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faf0aa4b79a26d7c9cc06c74777a755a23d843b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RulesEnginePOC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RulesEnginePOC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
