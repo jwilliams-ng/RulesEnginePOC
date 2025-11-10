@@ -7,7 +7,7 @@ namespace RulesEnginePOC.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-public class RulesEngineController(IRuleEngineService generalRuleService, IProviderRefundRulesService providerRefundRulesService) : ControllerBase
+public class RulesEngineController(IRuleEngineService generalRuleService, IProviderRefundRulesService providerRefundRulesService, IProviderRefundService providerRefundService) : ControllerBase
 {
     
     [HttpGet("process/{value1}/{value2}/{value3}")]
@@ -37,4 +37,15 @@ public class RulesEngineController(IRuleEngineService generalRuleService, IProvi
         var result = await providerRefundRulesService.GetRulesForProvider(providerId);
         return Ok(result);
     }
+    
+    
+    [HttpPost("generated-provider-refund/{providerId}")]
+    public async Task<IActionResult> GeneratedProviderRefund(int providerId, [FromBody] CancelledContract cancelledContract)
+    {
+        var rp1 = new RuleParameter("cancelledContract", cancelledContract);
+        
+        var result = await providerRefundService.GetRuleResults(providerId, [rp1]);
+        return Ok(result);
+    }
+
 }

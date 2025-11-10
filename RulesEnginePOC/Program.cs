@@ -11,6 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<IRuleEngineService, RuleEngineService>();
 builder.Services.AddScoped<IProviderRefundRulesService, ProviderRefundRulesService>();
+builder.Services.AddScoped<IProviderRefundService, ProviderRefundService>();
+builder.Services.AddScoped<IConvertDataToExpressionService, ConvertDataToExpressionService>();
 builder.Services.AddDbContext<RuleEngineContext>(opt => opt.UseInMemoryDatabase("RulesEngineDB")); 
 builder.Services.AddSwaggerGen();
 
